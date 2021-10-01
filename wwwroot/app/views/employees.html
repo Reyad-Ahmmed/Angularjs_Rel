@@ -1,0 +1,53 @@
+﻿<div class="row">
+    <div class="col-12">
+        <h2>Employees</h2>
+        <div class="d-flex justify-content-end mb-1">
+            <a href="#!createEmp" class="btn btn-sm btn-outline-secondary">Create New Employee</a>
+        </div>
+    </div>
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
+                    <th>Join Date</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr ng-repeat="e in model.employees">
+                    <td>{{e.employeeId}}</td>
+                    <td>{{e.employeeName}}</td>
+                    <td>{{e.joinDate | date: 'yyyy-MM-dd'}}</td>
+                    <td>{{DeptName(e.departmentId)}}</td>
+                    <td>
+                        <a href="#!/editEmp/{{e.employeeId}}" class="btn btn-sm btn-outline-primary">Edit</a>
+                        <button ng-click="confirmEmpDel(e)" class="btn btn-sm btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="modal" tabindex="-1" id="empDelModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h4 class="modal-title">Delete Employee</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Are you sure to delete this data?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" ng-click="cancelEmpDel()">Close</button>
+                    <button type="button" class="btn btn-danger" ng-click="deleteEmp()">Delete</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

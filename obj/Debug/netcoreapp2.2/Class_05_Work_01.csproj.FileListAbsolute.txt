@@ -1,0 +1,61 @@
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\appsettings.json
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.deps.json
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.runtimeconfig.json
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.runtimeconfig.dev.json
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.dll
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.pdb
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.csproj.AssemblyReference.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.AssemblyInfoInputs.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.AssemblyInfo.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.csproj.CoreCompileInputs.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorAssemblyInfo.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorAssemblyInfo.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorTargetAssemblyInfo.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.dll
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.pdb
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.genruntimeconfig.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\libman.json
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.Views.dll
+F:\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.Views.pdb
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.TagHelpers.input.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.TagHelpers.output.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorCoreGenerate.cache
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorTargetAssemblyInfo.cs
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.Views.pdb
+F:\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.csproj.CopyComplete
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\appsettings.Development.json
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\appsettings.json
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\libman.json
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.deps.json
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.runtimeconfig.json
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.runtimeconfig.dev.json
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.dll
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.pdb
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.Views.dll
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\bin\Debug\netcoreapp2.2\Class_05_Work_01.Views.pdb
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.GeneratedMSBuildEditorConfig.editorconfig
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.AssemblyInfoInputs.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.AssemblyInfo.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.csproj.CoreCompileInputs.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorAssemblyInfo.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorAssemblyInfo.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.TagHelpers.input.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.TagHelpers.output.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorCoreGenerate.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorTargetAssemblyInfo.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.RazorTargetAssemblyInfo.cs
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.Views.pdb
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.dll
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.pdb
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.genruntimeconfig.cache
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.csproj.CopyComplete
+H:\REYAD-1260660\Module 8\Homework\Sharif_PC\Class 05\Class_05_Works\Class_05_Work_01\obj\Debug\netcoreapp2.2\Class_05_Work_01.csproj.AssemblyReference.cache

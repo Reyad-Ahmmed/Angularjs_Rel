@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twitter-bootstrap@5.1.0",
+      "destination": "wwwroot/libs/bootstrap/"
+    },
+    {
+      "library": "angularjs-datepicker@2.1.23",
+      "destination": "wwwroot/libs/datepicker"
+    }
+    
+  ]
+}

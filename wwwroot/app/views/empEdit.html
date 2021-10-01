@@ -1,0 +1,76 @@
+﻿<div class="row container-fluid" ng-controller="empEditController">
+    <div class="col-10 offset-2">
+        <h3>Edit Employee</h3>
+    </div>
+    <div class="col-10 offset-2">
+        <div class="alert alert-success alert-dismissible fade show" role="alert" ng-show="alertMsg">
+            {{alertMsg}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <form name="EmpEdit">
+        <div class="form-group row mb-1">
+            <label for="empName" class="col-form-label col-form-label-sm col-2 text-end">Employee Name</label>
+            <div class="col-4">
+                <input type="text" name="empName" class="form-control form-control-sm"
+                       ng-model="empObject.employeeName" required maxlength="40" />
+            </div>
+            <div class="col-4">
+                <div class="text-danger" ng-show="!EmpEdit.empName.$pristine && EmpEdit.empName.$error.required">
+                    Department name required.
+                </div>
+                <div class="text-danger" ng-show="!EmpEdit.empName.$pristine && EmpEdit.empName.$error.maxlength">
+                    This field 40 character max.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <label class="col-form-label col-form-label-sm col-2 text-end">Join Date</label>
+            <div class="col-4">
+                <datepicker date-format="yyyy-MM-dd">
+                    <input type="text" class="form-control form-control-sm"
+                           ng-model="empObject.joinDate" required />
+                </datepicker>
+            </div>
+            <div class="col-4">
+                <div class="text-danger" ng-show="!EmpEdit.joinDate.$pristine && EmpEdit.joinDate.$error.required">
+                    This field is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <label for="departmentId" class="col-form-label col-form-label-sm col-2 text-end">Department Name</label>
+            <div class="col-4">
+                <select class="form-select form-select-sm"
+                        ng-model="empObject.departmentId"
+                        ng-options="dept.departmentId as dept.departmentName for dept in model.departments">
+                    <option value="" selected>--select one--</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <div class="text-danger" ng-show="!EmpEdit.departmentId.$pristine && EmpEdit.departmentId.$error.required">
+                    This field is required.
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group row mb-1">
+            <div class="col-10 offset-2">
+                <button type="submit" ng-click="updateEmp(EmpEdit)" class="btn btn-sm btn-outline-success"
+                        ng-disabled="EmpEdit.$invalid">
+                    Save
+                </button>
+                <button type="submit" ng-click="cancelEmp(EmpEdit)" class="btn btn-sm btn-outline-secondary"
+                        ng-disabled="EmpEdit.$invalid">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-10 offset-2">
+            <a href="#!/employees" class="btn btn-link px-0">Back to Dept. List</a>
+        </div>
+    </div>
+</div>

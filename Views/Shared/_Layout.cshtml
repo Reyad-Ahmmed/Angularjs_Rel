@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/libs/datepicker/angular-datepicker.css" rel="stylesheet" />
+    
+    <script src="~/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        .main {
+            min-height: calc(100vh - 150px);
+        }
+
+        .logo {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body ng-controller="mainController">
+    <nav class="navbar navbar-light bg-light navbar-expand-md shadow fixed-top">
+        <div class="container-fluid">
+            <span class="navbar-brand">Relational Database</span>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#!/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!/departments">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!/employees">Employees</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid main">
+        @RenderBody()
+       
+    </div>
+    <script src="~/libs/angularjs/angular.js"></script>
+    <script src="~/libs/angularjs/angular-route.js"></script>
+    <link href="~/libs/datepicker/angular-datepicker.css" rel="stylesheet" />
+    <hr />
+    <footer class="container-fluid">
+        &copy; @DateTime.Now.Year Angularjs (Relational table CRUD operation)
+    </footer>
+
+    <script src="~/libs/datepicker/angular-datepicker.js"></script>
+    <script>
+        angular.module("myApp", ['ngRoute', '720kb.datepicker'])
+            .config($routeProvider => {
+                $routeProvider
+                    .when("/", {
+                        templateUrl: "/app/views/home.html"
+                    })
+                    .when("/departments", { templateUrl: "/app/views/departments.html" })
+                    .when("/departments/:id", { templateUrl: "/app/views/empOfDept.html" })
+                    .when("/createDept", { templateUrl: "/app/views/createDept.html" })
+                    .when("/editDept/:id", { templateUrl: "/app/views/editDept.html" })
+                    .when("/employees", { templateUrl: "/app/views/employees.html" })
+                    .when("/createEmp", { templateUrl: "/app/views/createEmp.html" })
+                    .when("/editEmp/:id", { templateUrl: "/app/views/empEdit.html" })
+                    .otherwise("/")
+            })
+            .controller("mainController", ($scope, $http,$location) => {
+                // declare object
+                $scope.model = {};
+                $scope.deptObject = {};
+                $scope.empObject = {};
+
+                // for alert
+                $scope.alertMsg = '';
+
+                // for modal
+                $scope.delDeptModal = null;
+                $scope.delEmpModal = null;
+
+                //for filter
+                $scope.selectedDeptId = null;
+
+                // get department
+                $http.get("/api/Departments")
+                    .then(r => {
+                        $scope.model.departments = r.data;
+                    }, err => {
+
+                    })
+
+                //get employees
+                $http.get("/api/Employees")
+                    .then(r => {
+                        $scope.model.employees = r.data;
+                    }, err => {
+
+                    })
+
+                // for cancel button
+                $scope.cancelDept = (frm) => {
+                    frm.$setPristine();
+                    frm.$setUntouched();
+                    $scope.deptObject = {};
+                    $location.path("/departments");
+                }
+                $scope.cancelEmp = (f) => {
+                    $scope.empObject = {};
+                    f.$setPristine();
+                    f.$setUntouched();
+                    $location.path("/employees");
+                }
+
+                // for employee delete modal
+                $scope.confirmEmpDel = emp => {
+                    $scope.empObject = emp;
+                    $scope.delEmpModal = new bootstrap.Modal(document.getElementById('empDelModal'))
+                    $scope.delEmpModal.show();
+                }
+                $scope.cancelEmpDel = () => {
+                    $scope.delEmpModal.hide();
+                    $scope.empObject = {};
+                }
+
+                // for department delete modal
+
+                $scope.confirmDeptDel = d => {
+                    $scope.deptObject = d;
+                    $scope.delDeptModal = new bootstrap.Modal(document.getElementById('delDeptModal'))
+                    $scope.delDeptModal.show();
+                }
+                
+                $scope.cancelDeptDel = () => {
+                    $scope.delDeptModal.hide();
+                    $scope.deptObject = {};
+                }
+
+                // delete employee
+                $scope.deleteEmp = () => {
+                    $http.delete("/api/Employees/" + $scope.empObject.employeeId)
+                        .then(r => {
+                            var i = $scope.model.employees.findIndex(a => a.employeeId == $scope.empObject.employeeId);
+                            $scope.model.employees.splice(i, 1);
+                            $scope.delEmpModal.hide();
+
+                        }, err => {
+                            
+                        })
+                }
+
+                //delete department
+                $scope.deleteDept = () => {
+                    $http.delete("/api/Departments/" + $scope.deptObject.departmentId)
+                        .then(r => {
+                            var i = $scope.model.departments.findIndex(a => a.departmentId == $scope.deptObject.departmentId);
+                            $scope.model.departments.splice(i, 1);
+                            $scope.delDeptModal.hide();
+
+                        }, err => {
+                            $scope.alertMsg = "Warning! Data is not deleted successfully."
+                        })
+                }
+
+
+                // for department name show
+                
+                $scope.DeptName = id => {
+                    var d = $scope.model.departments.find(d => d.departmentId == id);
+                    return d.departmentName;
+                }
+
+                //filter
+                
+                $scope.selectedTypeFiler = d => {
+                    return $scope.selectedDeptId == null || d.departmentId == $scope.selectedDeptId;
+                }
+                $scope.$on('selectedTypeChanged', (evt, data) => {
+                    $scope.selectedDeptId = data;
+                });
+
+            })
+    </script>
+    <script src="~/app/controllers/deptController.js"></script>
+    <script src="~/app/controllers/deptEditCtrl.js"></script>
+    <script src="~/app/controllers/EmpController.js"></script>
+    <script src="~/app/controllers/empEditController.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<div class="row container-fluid" ng-controller="deptController">
+    <div class="col-10 offset-2">
+        <h3>Create New Department</h3>
+    </div>
+    <div class="col-10 offset-2">
+        <div class="alert alert-success alert-dismissible fade show" role="alert" ng-show="alertMsg">
+            {{alertMsg}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <form name="deptCreate">
+        <div class="form-group row mb-1">
+            <label for="DeptName" class="col-form-label col-form-label-sm col-2 text-end">Department Name</label>
+            <div class="col-4">
+                <input type="text" name="DeptName" class="form-control form-control-sm"
+                       ng-model="deptObject.departmentName" required maxlength="40" />
+            </div>
+            <div class="col-4">
+                <div class="text-danger" ng-show="!deptCreate.DeptName.$pristine && deptCreate.DeptName.$error.required">
+                    Department name required.
+                </div>
+                <div class="text-danger" ng-show="!deptCreate.DeptName.$pristine && deptCreate.DeptName.$error.maxlength">
+                    This field 40 character max.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-10 offset-2">
+                <button type="submit" ng-click="insertDept(deptCreate)" class="btn btn-sm btn-outline-success"
+                        ng-disabled="deptCreate.$invalid">
+                    Save
+                </button>
+                <button type="submit" ng-click="cancelDept(deptCreate)" 
+                        class="btn btn-sm btn-outline-secondary">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-10 offset-2">
+            <button type="button" ng-click="back(deptCreate)" class="btn btn-link px-0">Back to Dept. List</button>
+        </div>
+    </div>
+</div>

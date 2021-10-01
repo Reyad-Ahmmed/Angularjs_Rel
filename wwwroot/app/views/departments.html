@@ -1,0 +1,52 @@
+﻿<div class="row">
+    <div class="col-12">
+        <h3>Departments</h3>
+
+        <div class="d-flex justify-content-end mb-1">
+            <a href="#!/createDept" class="btn btn-sm btn-outline-secondary">Create New Department</a>
+        </div>
+    </div>
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Department Id</th>
+                    <th>Department Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="d in model.departments">
+                    <td>{{d.departmentId}}</td>
+                    <td>
+                        <a href="#!/departments/{{d.departmentId}}" class="btn btn-link">
+                            {{d.departmentName}}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#!/editDept/{{d.departmentId}}" class="btn btn-sm btn-outline-primary">Edit</a>
+                        <button type="button" ng-click="confirmDeptDel(d)" class="btn btn-sm btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="modal" tabindex="-1" id="delDeptModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h4 class="modal-title">Delete Department</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Are you sure to delete this department?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" ng-click="cancelDeptDel()">Cancel</button>
+                    <button type="button" class="btn btn-danger" ng-click="deleteDept()">Delete</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

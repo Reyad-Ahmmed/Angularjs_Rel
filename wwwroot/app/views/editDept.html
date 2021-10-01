@@ -1,0 +1,45 @@
+﻿<div class="row" ng-controller="deptEditCtrl">
+    <div class="col-10 offset-2">
+        <h3>Edit Department</h3>
+    </div>
+    <div class="col-10 offset-2">
+        <div class="alert alert-success alert-dismissible fade show" role="alert" ng-show="alertMsg">
+            {{alertMsg}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <form name="deptEdit">
+        <div class="form-group row mb-1">
+            <label for="Deptname" class="col-form-label col-form-label-sm col-2 text-end">Department Name</label>
+            <div class="col-4">
+                <input type="text" name="Deptname" class="form-control form-control-sm"
+                       ng-model="deptObject.departmentName" required maxlength="40" />
+            </div>
+            <div class="col-4">
+                <div class="text-danger" ng-show="!deptEdit.Deptname.$pristine && deptEdit.Deptname.$error.required">
+                    Department name required.
+                </div>
+                <div class="text-danger" ng-show="!deptEdit.Deptname.$pristine && deptEdit.Deptname.$error.maxlength">
+                    This field 40 character max.
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-10 offset-2">
+                <button type="submit" ng-click="update()" class="btn btn-sm btn-outline-primary"
+                        ng-disabled="deptEdit.$invalid">
+                    Update
+                </button>
+                <button type="submit" ng-click="cancelDept(deptEdit)" class="btn btn-sm btn-outline-secondary"
+                        ng-disabled="deptEdit.$invalid">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-10 offset-2">
+            <a href="#!/departments" class="btn btn-link px-0">Back to Dept. List</a>
+        </div>
+    </div>
+</div>
